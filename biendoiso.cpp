@@ -2,7 +2,7 @@
 using namespace std;
 #define ll long long
 #define fl float
-
+#define int long long
 void solve(){
     string s;
     ll dem=0, sokhong=0;
@@ -27,4 +27,5 @@ void solve(){
 int main(){
     solve();
 }
+
 
