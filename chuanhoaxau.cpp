@@ -4,7 +4,7 @@ using namespace std;
 int main() {
     string s;
     getline(cin, s);
-
+    // bd
     // string chữ thường
     for (int i = 0; i < (int)s.size(); ++i) {
         if (s[i] >= 'A' && s[i] <= 'Z') s[i] = s[i] + 32;
