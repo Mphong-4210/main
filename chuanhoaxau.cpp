@@ -1,68 +1,47 @@
-#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
-int main() {
-    string s;
-    getline(cin, s);
-    // bd
-    // string chữ thường
-    for (int i = 0; i < (int)s.size(); ++i) {
-        if (s[i] >= 'A' && s[i] <= 'Z') s[i] = s[i] + 32;
-    }
+#define ll long long
+#define db double
+#define fl float
+#define el "\n"
+#define ull unsigned long long
+#define fi first
+#define se second
 
-    // bỏ đầu
-    int L = 0;
-    for (; L < (int)s.size() && s[L] == ' '; ++L);
-    if (L > 0) s.erase(0, L);
+const int maxn=10e6+42;
+const int N=1e3;
+int a[maxn], y[N][N], dem[10];
+deque<int> dq;
 
-    // bỏ đuôi
-    if (!s.empty()) {
-        int R = (int)s.size() - 1;
-        for (; R >= 0 && s[R] == ' '; --R);
-        if (R + 1 < (int)s.size()) s.erase(R + 1);
-    }
-
-    // xóa dấu cách
-    for (int i = 0; i + 1 < (int)s.size(); ++i) {
-        if (s[i] == ' ' && s[i + 1] == ' ') {
-            s.erase(i + 1, 1);
-            --i;
-        }
-    }
-
-    // khoảng trắng quanh '.' và ','
-    for (int i = 0; i < (int)s.size(); ++i) {
-        if (s[i] == '.' || s[i] == ',') {
-            // xóa ' ' trước dấu
-            if (i > 0 && s[i - 1] == ' ') {
-                s.erase(i - 1, 1);
-                --i;
-                continue;
-            }
-            //dấu cách sau ,.
-            if (i + 1 < (int)s.size()) {
-                if (s[i + 1] != ' ') {
-                    s.insert(i + 1, 1, ' ');
-                } else {
-                    // xóa bớt các khoảng trắng thừa sau dấu
-                    for (int j = i + 1; j + 1 < (int)s.size() && s[j + 1] == ' '; ) {
-                        s.erase(j + 1, 1);
-                    }
-                }
-            }
-        }
-    }
-
-    //viết hoa '.'
-    if (!s.empty() && s[0] >= 'a' && s[0] <= 'z') s[0] -= 32;
-    for (int i = 0; i < (int)s.size(); ++i) {
-        if (s[i] == '.') {
-            int j = i + 1;
-            //sau dấu chấm
-            for (; j < (int)s.size() && s[j] == ' '; ++j);
-            if (j < (int)s.size() && s[j] >= 'a' && s[j] <= 'z') s[j] -= 32;
-        }
-    }
-
-    cout << s;
+void solve(){
+   string s;
+   getline(cin, s);
+   for(int i=0; i<s.size(); i++){
+      if(isupper(s[i])){
+         s[i] = tolower(s[i]);
+      }
+      if(s[i]==' '&& s[i+1]==' '){
+         s.erase(i+1, 1);
+         i--;
+      }
+   }
+   char c=toupper(s[0]);
+   cout<<c;
+   for(int i=1; i<s.size(); ++i){
+      if(s[i-1]==' '){
+         char x=toupper(s[i]);
+            cout<<x;
+      }
+      else{
+         cout<<s[i];
+      }
+   }
+}
+int main(){
+   freopen("CHUANHOA.INP", "r", stdin);
+   freopen("CHUANHOA.OUT", "w", stdout);
+   ios::sync_with_stdio(false);
+   cin.tie(nullptr);
+   solve();
 }
