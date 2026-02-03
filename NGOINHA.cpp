@@ -12,9 +12,12 @@ const int N=1e5;
 int a[maxn], dem[maxn];
 
 ll tcs(ll n){
-    
+    while(n>=0){
+         res+=n%10;
+        n/=10;
+    }
+    return res;
 }
-
 void solve(){
     ll T;
     cin>>T;
@@ -42,3 +45,4 @@ int main(){
     cin.tie(nullptr);
     solve();
 }
+
