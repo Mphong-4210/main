@@ -19,6 +19,7 @@ void ffopen(const string& file){
 
 int main(){
 	ms
+	//dequy x
 	ffopen("CANBANG");
 	cin>>t;
 	while(t--){
@@ -44,3 +45,4 @@ int main(){
 	cout<<"\n";
 }
 }
+
