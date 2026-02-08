@@ -12,7 +12,7 @@ using namespace std;
 #define fi first
 #define se second
 
-const int MAXN = 1000000;
+const int MAXN = 1e6+5;
 bool nt[MAXN + 1];
 
 void sang() {
@@ -47,4 +47,5 @@ int main(){
     for(int i=1; i<=T; i++){
         solve();
     }
+
 }
