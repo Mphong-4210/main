@@ -7,7 +7,6 @@ using namespace std;
 #define se second
 #define vect vector
 #define bend(v) v.begin(),v.end()
-#define mo  ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define l(s) s.size()
 const ll maxn=1e6+1;
 ll n,sum,max_len,cnt,cur_len,res;
@@ -18,7 +17,6 @@ void ffopen(const string& file){
 }
 
 int main(){
-	mo
 	ffopen("THONGKE");
 	cin>>n;
 	map<int,int> mp;
@@ -30,4 +28,5 @@ int main(){
 	for(pair<int,int> c: mp)
 		cout<<c.fi<<":"<<c.se<<'\n';
 }
+
 
