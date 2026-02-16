@@ -8,22 +8,25 @@ using namespace std;
 const int maxn=10e6+42;
 int a[maxn];
 
-
-void solve(){
-    ll n;
-    cin>>n;
-    cout<<n<<" ";
-
-    while(n!=1){
-        if(n%2==0){
-            n=n/2;
-            cout<<n<<' ' ;
-        }
-        else{
-            n=(n*3)+1;
-            cout<<n<<' ';
+ll tud(ll a){
+    ll dem=0;
+    for(int i=1; i<=a; i++){
+        if(a%i==0){
+            dem+=i;
         }
     }
+    return dem;
+}
+void solve(){
+    ll n, dem=0;
+    cin>>n;
+    for(int i=1; i<=n; i++){
+        cin>>a[i];
+        if(a[i]*2<=tud(a[i])){
+            dem+=1;
+        }
+    }
+    cout<<dem;
 }
 
 int main(){
