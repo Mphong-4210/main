@@ -7,7 +7,6 @@ using namespace std;
 #define se second
 #define vect vector
 #define bend(v) v.begin(),v.end()
-#define ms  ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define l(s) s.size()
 const ll maxn=1e6+1;
 ll t;
@@ -18,8 +17,6 @@ void ffopen(const string& file){
 }
 
 int main(){
-	ms
-	//dequy x
 	ffopen("CANBANG");
 	cin>>t;
 	while(t--){
@@ -45,4 +42,5 @@ int main(){
 	cout<<"\n";
 }
 }
+
 
