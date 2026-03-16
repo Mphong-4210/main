@@ -19,7 +19,7 @@ void solve(){
         }
     }
 
-    cout << dem;
+    cout << dem<<endl;
 }
 
 int main() {
