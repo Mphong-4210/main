@@ -1,0 +1,87 @@
+
+#pragma GCC optimize("O3")
+#pragma GCC target("avx2")
+#include<bits/stdc++.h>
+using namespace std;
+
+#define ll long long
+#define ull unsigned long long
+#define db double
+#define fl float
+#define str string
+#define ldb long double
+
+#define vll vector<ll>
+#define pll pair<ll,ll>
+#define mll map<ll,ll>
+#define dq deque<ll>
+
+#define ret return
+#define el '\n'
+#define sz size()
+#define fi first
+#define se second
+#define pb push_back
+#define pob pop_back
+// good luck coding:)
+
+const ll INF = 1e18, NINF = -1e18;
+const int MAXN=1e6+42, N=1e3, MOD=1000000007;
+const int dx[4] = {1,-1,0,0}, dy[4] = {0,0,1,-1};
+ll a[MAXN], dem[MAXN], y[N][N], pre[MAXN];
+
+void manhphong(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+}
+
+void ffopen(string name){
+    string infile=name + ".inp";
+    string outfile=name + ".out";
+    if(FILE* f = fopen(infile.c_str(), "r")){
+        fclose(f);
+        freopen(infile.c_str(), "r", stdin);
+        freopen(outfile.c_str(), "w", stdout);
+    }
+}
+
+void solve(){
+    int n, k;
+    cin >> n >> k;
+    vector<int> a(n);
+    for (int i = 0; i < n; i++) cin >> a[i];
+    vector<int> pref(n+1,0);
+    for (int i = 0; i < n; i++) {
+        pref[i+1] = pref[i] + (a[i]==0);
+    }
+    int ans = 0;
+    for (int i = 0; i + k <= n; i++) {
+        int l = i, r = i+k-1;
+        int left = l, right = r;
+        while (left > 0 && a[left-1]==1) left--;
+        while (right+1 < n && a[right+1]==1) right++;
+        ans = max(ans, right-left+1);
+    }
+
+    cout << ans << "\n";
+}
+
+int main(){
+    //ffopen("filename");
+    manhphong();
+    solve();
+}
+
+/*
+   ____  _                             
+  |  _ \| |__   ___  _ __   __ _ 
+  | |_) | '_ \ / _ \| '_ \ / _` |
+  |  __/| | | | (_) | | | | (_| |
+  |_|   |_| |_|\___/|_| |_|\__, |
+                           |___/       
+               /\_/\
+              ( o.o )
+               > ^ <
+               /   \
+*/
