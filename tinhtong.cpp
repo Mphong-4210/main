@@ -36,15 +36,7 @@ void manhphong(){
     cout.tie(nullptr);
 }
 
-void ffopen(string name){
-    string infile=name + ".inp";
-    string outfile=name + ".out";
-    if(FILE* f = fopen(infile.c_str(), "r")){
-        fclose(f);
-        freopen(infile.c_str(), "r", stdin);
-        freopen(outfile.c_str(), "w", stdout);
-    }
-}
+
 
 void solve(){
     ll n;
@@ -59,9 +51,7 @@ void solve(){
     cout<<ans;
 }
 
-int main(){
-    ffopen("TINHTONG");
-    manhphong();
+int main(){    manhphong();
     solve();
 }
 
