@@ -5,32 +5,24 @@ int main() {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    freopen("DANVU.INP", "r", stdin);
-    freopen("DANVU.OUT", "w", stdout);
+    long long n;
+    cin >> n;
 
-    int n, m;
-    cin >> n >> m;
+    if (n % 3 != 0) {
+        cout << -1;
+        return 0;
+    }
 
-    vector<long long> a(n), b(m);
-    for (int i = 0; i < n; i++) cin >> a[i];
-    for (int i = 0; i < m; i++) cin >> b[i];
-
-    sort(a.begin(), a.end());
-    sort(b.begin(), b.end());
-
-    int i = 0, j = 0, res = 0;
-
-    while (i < n && j < m) {
-        if (a[i] > b[j]) {
-            res++;
-            i++;
-            j++;
-        } else {
-            i++;
+    for (long long b = n / 9; b >= 0; b--) {
+        long long rem = n - 9 * b;
+        if (rem % 6 == 0) {
+            long long a = rem / 6;
+            for (int i = 0; i < a; i++) cout << 6;
+            for (int i = 0; i < b; i++) cout << 9;
+            return 0;
         }
     }
 
-    cout << res;
-
+    cout << -1;
     return 0;
 }
