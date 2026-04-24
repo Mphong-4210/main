@@ -47,9 +47,10 @@ void solve(){
     int xh = 0;
         
     for(char c:s){
-        dem[c-'a']++;
         if(dem[c-'a']>xh){
             xh=dem[c-'a'];
+                    dem[c-'a']++;
+
         }
     }
     int n=s.size();
