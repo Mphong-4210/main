@@ -2,8 +2,6 @@
 using namespace std;
 
 #define ll long long
-#define ms ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-
 const int MaxN = 5000000;
 
 bool prime[MaxN + 5];
@@ -11,7 +9,7 @@ vector<ll> p;
 
 int main()
 {
-    ms
+    ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 
 
 
