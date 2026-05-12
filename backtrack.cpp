@@ -25,7 +25,7 @@ void in_kq(){
 void backtrack(int pos, ll k, ll n){
     if(pos==k){
         in_kq();
-        return;
+        return 0;
     }
     for(int i=1; i<=n; i++){
         v.push_back(i);
