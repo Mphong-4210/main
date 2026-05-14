@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-int n; 
+#define ll long long
+ll n; 
 vector<int> v; 
 vector<bool> check; 
 void kq() {
