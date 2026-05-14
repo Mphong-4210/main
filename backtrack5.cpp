@@ -1,7 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
-long long dem=0;
-int n, k;
+#define ll long long
+ll dem=0;
+ll n, k;
 vector<int> a; 
 void backtrack(int x, int y) {
     if (x == k) {
