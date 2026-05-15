@@ -41,9 +41,14 @@ void ffopen(string name){
 }
 
 void solve(){
-    ll n;
-    cin>>n;
-    for(ll i=1;i<=n;i++) cin>>a[i];
+    ll n, m;
+    cin>>n>>m;
+    for(ll i=1;i<=n;i++){
+        for(int j=1; j<=m; j++){
+            cin>>a[i];
+            a[j]=a[i+2]+1;
+        }
+    }
     sort(a+1,a+n+1);
     for(ll k=n/2;k>=1;k--){
         bool ok=true;
