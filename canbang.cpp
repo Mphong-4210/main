@@ -10,14 +10,9 @@ using namespace std;
 #define l(s) s.size()
 const ll maxn=1e6+1;
 ll t;
-void ffopen(const string& file){
-    if(file.empty())return;
-    freopen((file + ".inp").c_str(), "r", stdin);
-    freopen((file + ".out").c_str(), "w", stdout);
-}
+
 
 int main(){
-	ffopen("CANBANG");
 	cin>>t;
 	while(t--){
 	ll n; cin>>n;
