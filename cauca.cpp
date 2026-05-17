@@ -24,7 +24,7 @@ void solve(){
         for(int j=1; j<=m; j++){
             dp[i][j]=dp[i-1][j];
             if(j >= w[i]){
-                dp[i][j] = max(dp[i][j], dp[i-1][j - w[i]] + v[i]);
+                dp[i][j] = min(dp[i][j], dp[i-1][j - w[i]] + v[i]);
             }
         }
     }
