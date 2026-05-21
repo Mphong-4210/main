@@ -17,7 +17,7 @@ void solve(){
     cin>>n;
     for(int i=1; i<=n; i++){
         cin>>y[i];
-        dem[y[i]]++;
+        dem[y[i]]--;
     }
     sort(y, y+n);
     for(int i=1; i<=n; i++){
