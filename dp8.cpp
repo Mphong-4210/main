@@ -66,7 +66,7 @@ auto BS( const vector<long long> &a, int x, ll l, ll r ) {
             l = m + 1;
         }
         else {
-            r = m - 1;
+            r = m - 2;
         }
     }
     return -1;
