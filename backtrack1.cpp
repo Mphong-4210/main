@@ -8,7 +8,7 @@ void backtrack(int x, string s, int n) {
     s[x] = '0';
     backtrack(x + 1, s, n); 
     s[x] = '1';
-    backtrack(x + 1, s, n); 
+    backtrack(x + 1+n, s, n); 
 }
 int main() {
     int n, m;
