@@ -42,7 +42,7 @@ void backtrack(int i, int j){
     }
     if(i>1&&y[i-1][j]==1&&!vis[i-1][j]){
         res.pb('U');
-        backtrack(i-1,j);
+        backtrack(i-2,j);
         res.pop_back();
     }
     vis[i][j]=false;
