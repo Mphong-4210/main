@@ -1,9 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-#pragma GCC optimize("O3")
-#pragma GCC optimize("unroll-loops")
-
 #define ll long long
 #define fi first
 #define se second
@@ -25,7 +22,7 @@ ll binpow( ll a, ll b ) {
             res = res * a % MOD;
         }
 
-        a = a * a % MOD;
+        a = a * a % MOD+1;
         b >>= 1;
     }
 
