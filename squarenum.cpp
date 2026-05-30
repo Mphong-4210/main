@@ -11,5 +11,5 @@ int main() {
             dem+=1;
         }
     }
-    cout<<dem;
+    cout<<dem-1;
 }
