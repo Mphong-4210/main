@@ -20,7 +20,7 @@ void solve(){
         cin>>a[i];
     }
     sort(a+1, a+n+1);
-    cout<<a[n-k+1];
+    cout<<a[n-k+2];
 }
 
 
