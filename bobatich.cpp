@@ -23,7 +23,7 @@ void solve(){
     }
     sort(a+1, a+n+1);
     ll x=a[1]*a[i]*a[n];
-    ll y=a[n-2]*a[n-1]*a[n];
+    ll y=a[n-1]*a[n-3]*a[n];
     if(x>y){
         cout<<x;
     }
