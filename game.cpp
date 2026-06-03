@@ -51,10 +51,10 @@ void solve(){
         cout<<a+a;
     }
     else if(a>b){
-        cout<<a+a-1;
+        cout<<a+a+a-1;
     }
     else{
-        cout<<b+b-1;
+        cout<<b+b+b-1;
     }
 }
 
