@@ -18,7 +18,6 @@ using namespace std;
 
 #define ret return
 #define el '\n'
-#define sz size()
 #define fi first
 #define se second
 #define pb push_back
@@ -49,7 +48,7 @@ void ffopen(string name){
 void solve(){
     str x, y;
     cin>>x>>y;
-    ll n=y.sz;
+    ll n=y.size();
     ll ans=0;
     for(ll i=0; i+2<n; i++){
         if(y[i]==x[0] && y[i+1]==x[1] && y[i+2]==x[2]){
