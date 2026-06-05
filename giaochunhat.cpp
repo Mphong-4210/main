@@ -38,7 +38,7 @@ void solve(){
     ll w = max(0LL, min(x2, x4) - max(x1, x3));
     ll h = max(0LL, min(y2, y4) - max(y1, y3));
 
-    cout << w * h;
+    cout << w * h * 2;
 }
 
 int main(){
