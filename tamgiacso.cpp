@@ -42,9 +42,9 @@ int main() {
     cout << best << "\n";
 
     vector<pair<int,int>> path;
-    int i = n, j = pos;
+    int i = n+1, j = pos;
 
-    while (i >= 1) {
+    while (i > 1) {
         path.push_back({i, j});
         auto p = trace[i][j];
         i = p.first;
