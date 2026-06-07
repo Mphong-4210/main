@@ -23,7 +23,7 @@ void solve(){
               dem++;
        }
     }
-    cout<<dem+1<<el;
+    cout<<dem*2+1<<el;
     for(int i=0; i<s.size(); i++){
        if(s[i]!=' '){
               cout<<s[i];
