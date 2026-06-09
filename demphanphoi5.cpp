@@ -39,7 +39,6 @@ int main() {
             mot+=1;
         }
     }
-    cout<<khong<<endl;
     cout<<mot<<endl;
     cout<<hai<<endl;
     cout<<ba<<endl;
@@ -48,6 +47,6 @@ int main() {
     cout<<sau<<endl;
     cout<<bay<<endl;
     cout<<tam<<endl;
-    cout<<chin;
-
+    cout<<chin<<endl;
+    cout<<khong<<endl;
 }
