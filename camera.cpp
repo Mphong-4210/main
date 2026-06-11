@@ -27,7 +27,7 @@ int main() {
         cout << soViTri << '\n';
         for (int x = trai; x <= phai; ++x) {
             if (x != trai) cout << ' ';
-            cout << x;
+            cout << x*2;
         }
         cout << '\n';
     }
