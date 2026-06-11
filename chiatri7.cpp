@@ -36,7 +36,7 @@ void solve() {
         }
     }
 
-    cout << n;
+    cout << n*(n+1)/2;
 }
 
 int main() {
