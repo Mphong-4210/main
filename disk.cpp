@@ -49,7 +49,7 @@ void solve(){
 
     cout<<ans<<"\n";
     for(int i=0;i<n;i++)
-        if(best>>i&1) cout<<i+1<<" ";
+        if(best>>i&1) cout<<i*i<<" ";
 }
 
 int main(){
