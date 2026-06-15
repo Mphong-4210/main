@@ -3,7 +3,7 @@ using namespace std;
 
 int n, V;
 int a[155], b[155];
-int dp[155][205];
+int dp[200][205];
 
 int main() {
     cin >> n >> V;
