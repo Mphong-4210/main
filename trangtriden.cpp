@@ -24,7 +24,7 @@ ll n,x;
 void sol()
 {
     cin>>n>>x;
-    cout<<(n+1)/2*x;
+    cout<<(n+1)/2*(x+1);
 }
 
 void ffopen(const str &name)
