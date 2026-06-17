@@ -34,6 +34,6 @@ int main() {
         return 0;
     }
     dfs(1, 1);
-    if (!ok) cout << -1;
+    if (!ok) cout << 0;
     return 0;
 }
