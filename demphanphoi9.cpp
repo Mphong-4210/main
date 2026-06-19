@@ -22,7 +22,7 @@ void solve(){
     for(int i=1; i<=50000; i++){
         if(dem[i]==0){
             cout<<i;
-            break;
+            return;
         }
     }
 }
