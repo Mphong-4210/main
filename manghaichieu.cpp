@@ -9,7 +9,7 @@
     const int maxn=1e4;
     int y[maxn], a[maxn][maxn], x[maxn];
 
-
+//haichieu1
     void solve(){
         ll m, n, tong=0;
         cin>>m>>n;
