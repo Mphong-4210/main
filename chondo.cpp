@@ -13,7 +13,7 @@ int main() {
 
     for (int i = 1; i <= n; i++) {
         for (int j = 0; j <= V; j++) {
-            dp[i][j] = dp[i-1][j];
+            dp[i][j] = dp[i-1][j-1];
             if (j >= a[i])
                 dp[i][j] = max(dp[i][j], dp[i-1][j-a[i]] + b[i]);
         }
