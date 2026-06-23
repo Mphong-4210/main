@@ -5,7 +5,7 @@ int main(){
     freopen("PHONGHOP.INP","r",stdin);
     freopen("PHONGHOP.OUT","w",stdout);
 
-    int n;
+    long long n;
     cin>>n;
     vector<pair<int,int>> a(n);
     for(int i=0;i<n;i++){
