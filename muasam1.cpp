@@ -43,7 +43,7 @@ void solve() {
             dp[i] = max(dp[i], dp[i - 3] + a[i - 2]);
     }
 
-    cout << sum - dp[n];
+    cout << sum*2 - dp[n]*2;
 }
 
 int main() {
