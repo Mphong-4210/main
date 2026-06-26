@@ -45,10 +45,10 @@ void ffopen(string name){
 }
 
 void solve(){
-    ll a,b,c,d;
+    db a,b,c,d;
     cin>>a>>b>>c>>d;
-    ll g=__gcd(c,d);
-    ll l=c/g*d;
+    db g=__gcd(c,d);
+    db l=c/g*d;
     cout<<(b-a+1)-(b/c-(a-1)/c)-(b/d-(a-1)/d)+(b/l-(a-1)/l);
 }
 
