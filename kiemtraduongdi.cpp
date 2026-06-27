@@ -47,8 +47,8 @@ void solve(){
     while(q--){
         int s, t;
         cin >> s >> t;
-        if(comp[s] == comp[t]) cout << "1\n";
-        else cout << "-1\n";
+        if(comp[s] == comp[t]) cout << "1";
+        else cout << "-1";
     }
 }
 
