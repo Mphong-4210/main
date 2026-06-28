@@ -18,7 +18,7 @@ void backtrack(int row, int cnt, long long sum){
         else if(sum == best){
             ways++;
         }
-        return;
+        return 1;
     }
 
     if(row > n) return;
