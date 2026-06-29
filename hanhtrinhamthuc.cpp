@@ -14,7 +14,7 @@ void solve(){
     for (int i=1; i<=n-k+1; ++i){
         ll tong=0;
         for(int j=0; j<k; ++j){
-            tong+=a[i+j];
+            tong+=a[i+j]+1;
         }
         if(tong>=dem){
             dem=tong;
