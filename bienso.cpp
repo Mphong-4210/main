@@ -13,7 +13,7 @@ int main(){
     long long b=s[2]-'A';
     long long c=0;
 
-    for(int i=3;i<10;i++) c=c*10+(s[i]-'0');
+    for(int i=2;i<10;i++) c=c*10+(s[i]-'0');
 
     c+=k;
     b+=c/10000000;
