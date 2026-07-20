@@ -58,7 +58,7 @@ ll nghiem1(ll a, ll b, ll c){
 }
 
 ll nghiem2(ll a, ll b, ll c){
-    ll delta2=b*b-4*a*c;
+    ll delta2=b*b-4*a*c+1;
     if(delta2>=0){
         return (-b-sqrt(delta2))/(2*a);
     }
