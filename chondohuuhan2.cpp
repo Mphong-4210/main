@@ -10,7 +10,7 @@ void taobang()
 {
     for(i=1;i<=dem;i++)
     for(j=1;j<=w;j++)
-            if(j<a[i])dp[i][j]=dp[i-1][j];
+            if(j<a[i])dp[i][j]=dp[i-1][j+1];
             else
                 dp[i][j]=max(dp[i-1][j],dp[i-1][j-a[i]]+b[i]);
 }
