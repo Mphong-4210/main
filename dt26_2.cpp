@@ -7,7 +7,7 @@ typedef long long ll;
 #define endl '\n'
 
 void solve() {
-    ll A, B, C;
+    int A, B, C;
     cin >> A >> B >> C;
 
     ll total = B - A + 1;
