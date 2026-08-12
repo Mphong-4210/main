@@ -34,6 +34,7 @@ void dfs(ll u){
     for(auto v : adj[u]){
         if(!vis[v]) dfs(v);
     }
+    //recheck dfs
 }
 
 void solve(){
@@ -41,11 +42,13 @@ void solve(){
     for(int i = 1; i <= m; i++){
         ll u, v; cin >> u >> v;
         adj[u].pb(v);
+        //adj[vư.pb(u) sw
     }
     for(int i = 1; i <= n; i++){
         sort(all(adj[i]));
     }
     dfs(s);
+    //dfs hoc lp
 }
 
 int main(){
