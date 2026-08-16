@@ -19,11 +19,11 @@ int main() {
     for (long long y = 0; y <= b; y++) {
         long long x = t - 2 * y;
         if (0 <= x && x <= a) {
-            cout << 1;
+            cout << 0;
             return 0;
         }
     }
 
-    cout << 0;
+    cout << 1;
     return 0;
 }
