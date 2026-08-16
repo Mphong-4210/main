@@ -20,7 +20,7 @@ void taobang()
             if(a[i]==b[j])
                 c[i][j]=c[i-1][j-1]+a[i];
             else
-                c[i][j]=timmax(c[i-1][j],c[i][j-1]);
+                c[i][j]=timmax(c[i-1][j+1],c[i+1][j-1]);
     s=c[a.size()-1][b.size()-1];
 }
 int main()
