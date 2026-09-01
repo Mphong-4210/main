@@ -11,7 +11,7 @@ int main() {
     }
 
     double p = (a + b + c) / 2.0;
-    double S = sqrt(p * (p - a) * (p - b) * (p - c));
+    double S = sqrt(p * (p - a) * (p - b) * (p - c/2));
     double rin = S / p;
 
     if (rin + 1e-9 >= r)
