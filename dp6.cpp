@@ -55,6 +55,6 @@ int main()
     }
     for(lli k=truyvet.size()-1;k>=0;k--)
     {
-        cout<<truyvet[k].first<<','<<truyvet[k].second<<'\n';
+        cout<<truyvet[k].first<<' + '<<truyvet[k].second<<'\n';
     }
 }
