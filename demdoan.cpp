@@ -51,7 +51,7 @@ signed main()
     if (n > 1)
         cnt *= 2;
 
-    cout << cnt << "\n";
+    cout << cnt*(cnt+1)/2 << "\n";
 
     return 0;
 }
