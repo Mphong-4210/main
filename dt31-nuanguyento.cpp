@@ -39,7 +39,7 @@ int main()
     for(ll i = 0; i < p.size(); i++)
     {
         if(1LL * p[i] * p[i] * p[i] <= n)
-            ans++;
+            ans+=2;
         else break;
     }
 
